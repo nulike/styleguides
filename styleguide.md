@@ -1,9 +1,8 @@
-## CSS Styleguide
+# Nulike Styleguide
 
-So just that all has it's order, here I will be keeping all rules needed.
+## Naming
 
-
-### Naming conventions
+### Naming-conventions
 
 For Naming the classes a slight variation of the BEM-convention will be used:
 
@@ -35,7 +34,13 @@ Not nested as: [bad]
 
 Seems pretty straight forward, I will add rules as needed. I have to use this in practice more.
 
-### Structure of CSS
+## Linting
+
+Where possible the a lint should be used. There is an own `.sass-lint.yml` file where all rules followed are listed.
+
+Sort order of all properties follows Twitters [recess](https://github.com/twitter/recess/blob/master/lib/lint/strict-property-order.js)-sort-order.
+
+## Structure of CSS
 
 First you need to follow the structure used to keep the CSS clear. This follows the ITCSS (Invertred Triangle CSS) approach found [as a slide](https://speakerdeck.com/dafed/managing-css-projects-with-itcss). Top to bottom, generic to explicit.
 
@@ -48,41 +53,45 @@ First you need to follow the structure used to keep the CSS clear. This follows 
 * [Themes](#themes)
 * [Trumps](#trumps)
 
-#### Settings
+### Settings
 
 Global variables, config switches.
 
 -
-#### Tools
+### Tools
 
 Default mixins and functions.
 
 -
-#### Generic
+### Generic
 
 Ground zero styles (normalize.css, resets, box-sizing).
 
 -
-#### Base
+### Base
 
 Unclassed HTML selectors (type selectors).
 
 -
-#### Objects
+### Objects
 
 Cosmetic-free design patterns.
 
 -
-#### Components
+### Components
 
 Designed components, chunks of UI.
 
 -
-#### Themes
+### Themes
 
 Any themes, just visual overrides (colors, fonts).
 
 -
-#### Trumps
+### Trumps
 
 Helpers and overrides
+
+## Colors
+
+There is an own [Colorguide](colorguide.md) for how to work with colors on the project. This goes from how to include colors in your CSS files and how to pick what colors to use.
